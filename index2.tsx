@@ -1,3 +1,4 @@
+//El contenido de este archivo va en el index que va en app/(tabs) del segundo proyecto.
 import { useState } from "react";
 import {
   ActivityIndicator,
@@ -75,13 +76,11 @@ export default function Page() {
       <Text style={styles.margen}>Botón simple.</Text>
       <Button 
         title="Ejemplo de botón"
-        onPress={() => alert("Presionaste el botón")}
       />
 
       <Text style={styles.titulo}>Pressable</Text>
       <Text style={styles.margen}>Detecta interacciones. Recomendado para botones más personalizados.</Text>
       <Pressable 
-        onPress={() => alert("Presionaste el pressable.")}
         style={{backgroundColor: "lightblue", padding: 10, justifyContent:"center", alignItems: "center", margin:10}}
         >
         <Text>EJEMPLO</Text>
@@ -90,7 +89,6 @@ export default function Page() {
       <Text style={styles.titulo}>TouchableOpacity</Text>
       <Text style={styles.margen}>Similar a Pressable, pero tiene un efecto de opacidad al presionar.</Text>
       <TouchableOpacity
-        onPress={() => alert("Presionaste el TouchableOpacity.")}
         style={{backgroundColor: "lightblue", padding: 10, justifyContent:"center", alignItems: "center", margin:10}}
         >
         <Text>EJEMPLO</Text>
@@ -99,7 +97,6 @@ export default function Page() {
       <Text style={styles.titulo}>TouchableHighlight</Text>
       <Text style={styles.margen}>Similar a Pressable, pero tiene un efecto de fondo resaltado al presionar.</Text>
       <TouchableHighlight
-        onPress={() => alert("Presionaste el TouchableHighlight.")}
         style={{backgroundColor: "lightblue", padding: 10, justifyContent:"center", alignItems: "center", margin:10}}
         underlayColor="blue"
         >
@@ -108,9 +105,7 @@ export default function Page() {
 
       <Text style={styles.titulo}>TouchableWithoutFeedback</Text>
       <Text style={styles.margen}>Detecta interacciones sin cambios visuales. No acepta style.</Text>
-      <TouchableWithoutFeedback
-        onPress={() => alert("Presionaste el TouchableOpacity.")}
-        >
+      <TouchableWithoutFeedback>
         <Text>EJEMPLO</Text>
       </TouchableWithoutFeedback>
 
