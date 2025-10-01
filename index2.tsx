@@ -76,13 +76,14 @@ export default function Page() {
       <Text style={styles.margen}>Botón simple.</Text>
       <Button 
         title="Ejemplo de botón"
+        onPress={() => setModalVisible(true)}
       />
 
       <Text style={styles.titulo}>Pressable</Text>
       <Text style={styles.margen}>Detecta interacciones. Recomendado para botones más personalizados.</Text>
       <Pressable 
         style={{backgroundColor: "lightblue", padding: 10, justifyContent:"center", alignItems: "center", margin:10}}
-        >
+        onPress={() => setModalVisible(true)}>
         <Text>EJEMPLO</Text>
       </Pressable>
 
@@ -90,6 +91,7 @@ export default function Page() {
       <Text style={styles.margen}>Similar a Pressable, pero tiene un efecto de opacidad al presionar.</Text>
       <TouchableOpacity
         style={{backgroundColor: "lightblue", padding: 10, justifyContent:"center", alignItems: "center", margin:10}}
+        onPress={() => setModalVisible(true)}
         >
         <Text>EJEMPLO</Text>
       </TouchableOpacity>
@@ -99,13 +101,15 @@ export default function Page() {
       <TouchableHighlight
         style={{backgroundColor: "lightblue", padding: 10, justifyContent:"center", alignItems: "center", margin:10}}
         underlayColor="blue"
+        onPress={() => setModalVisible(true)}
         >
         <Text>EJEMPLO</Text>
       </TouchableHighlight>
 
       <Text style={styles.titulo}>TouchableWithoutFeedback</Text>
       <Text style={styles.margen}>Detecta interacciones sin cambios visuales. No acepta style.</Text>
-      <TouchableWithoutFeedback>
+      <TouchableWithoutFeedback
+      onPress={() => setModalVisible(true)}>
         <Text>EJEMPLO</Text>
       </TouchableWithoutFeedback>
 
