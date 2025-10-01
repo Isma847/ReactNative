@@ -1,3 +1,4 @@
+// Este archivo va en app/(tabs)/ del primer ejercicio
 import { Image } from 'expo-image';
 import { StyleSheet } from 'react-native';
 
