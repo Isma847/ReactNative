@@ -1,5 +1,5 @@
 import { ScrollView, Text } from 'react-native';
-// Este archivo va en app/(tabs)/
+// Este archivo va en app/(tabs)/ del primer ejercicio
 export default function HomeScreen() {
   return (
     <ScrollView contentContainerStyle={{ paddingBottom: 80, flexGrow:1}}>
@@ -8,3 +8,4 @@ export default function HomeScreen() {
     </ScrollView>
   );
 }
+
